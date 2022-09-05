@@ -8,7 +8,8 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
 }
 
 main {
@@ -91,10 +92,26 @@ main {
     font-weight: 500;
 }
 
+.block .button__continue:hover {
+    background: var(--shadow-color)
+}
+
+.block .button__continue:active {
+    transform: scale(1.1);
+}
+
 .block .button__skip {
     cursor: pointer;
     color: var(--primary_color);
     font-weight: 500;
+}
+
+.block .button__skip:hover {
+    color: var(--shadow-color);
+} 
+
+.block .button__skip:active {
+    transform: scale(1.1);
 }
 
 #block--1:checked~.block--1 {
